@@ -1,0 +1,360 @@
+/* Root Variables for Theme Colors */
+:root {
+  --primary-color: #e63946; /* Red */
+  --secondary-color: #f1faee; /* Light Gray */
+  --dark-color: #1d3557; /* Dark Blue */
+  --accent-color: #457b9d; /* Soft Blue */
+  --text-color: #333333; /* Dark Text */
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--dark-color);
+  background-color: none !important;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styling */
+.header {
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.header .header-1 i {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header .header-1 .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.header .header-1 .logo h1 {
+  font-size: 2rem;
+}
+
+.header .header-2 nav {
+  background-color: var(--primary-color);
+}
+
+.header .header-2 nav a {
+  margin-right: 20px;
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.header .header-2 nav a:hover {
+  color: var(--dark-color);
+}
+
+/* General Styling */
+.dashboard {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: url('donateblood.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color:  #dc3545;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Stats Section */
+.stats {
+  background: #f8f9fa;
+  padding: 40px 20px;
+}
+
+.stats .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  color: #dc3545;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--text-color) !important;
+  position: absolute;
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap:1rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 1.8rem;
+  color: white;
+  padding:1rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.4rem;
+  padding:1.2rem 0;
+  color: white;
+}
+
+.footer .box-container .box a i{
+  color: white;
+  padding-right: .5rem;
+}
+
+.footer .box-container .box i{
+  font-size: 1.2rem;
+  color: white;
+}
+
+.footer .box-container .box a:hover i{
+  padding-right: 5rem;
+}
+
+.footer .box-container .box .share{
+  text-align: center;
+}
+
+.footer .box-container .box .share a{
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 1.6;
+  font-size: 2rem;
+  color: white;
+  background: var(--text-color);
+  border-radius: 20%; 
+  float: left;
+  padding-top: 0.3rem;
+  margin-right: 0.8rem;
+  margin-left: -0.8rem;
+}
+
+.footer .box-container .box .share a:hover{
+  background-color:var(--primary-color);
+  border-radius: 50%;
+}
+
+.footer .credit{
+  border-top: var(--border);
+  margin-top: 3rem;
+  padding:0 1rem;
+  padding-top: 2.5rem;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+}
+
+/* Manage Donors Styling */
+.manage {
+  padding: 20px;
+}
+
+.manage table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.manage th, .manage td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.manage th {
+  background: #f8f9fa;
+}
+
+.manage button {
+  padding: 5px 10px;
+  color: white;
+  background: #dc3545;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.manage button:hover {
+  background: #ff4d4d;
+}
+
+/* Admin Panel Styling */
+.admin-panel {
+  padding: 20px;
+  text-align: center;
+}
+
+.admin-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.admin-menu a {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background: #dc3545;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.admin-menu a:hover {
+  background: #ff4d4d;
+}
+
+/* Form Styling */
+form {
+  background: var(--accent-color);
+  padding: 30px;
+  margin: 100px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+form input,
+form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+}
+
+form button {
+  background: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--accent-color);
+}
+
+h2 {
+  color:var(--dark-color);
+  margin-top: 20px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .card {
+    margin: 10px auto;
+    width: 95%;
+  }
+}
